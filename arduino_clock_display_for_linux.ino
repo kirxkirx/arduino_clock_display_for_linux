@@ -43,6 +43,8 @@ void loop() {
 
     // This is to display the silly dots
     data[1] = 0x80 | display.encodeDigit(str[1]);
+    // Same as above, but with no silly dots
+    //data[1] = display.encodeDigit(str[1]);
     
     data[2] = display.encodeDigit(str[2]);
     data[3] = display.encodeDigit(str[3]);
